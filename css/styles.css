@@ -103,14 +103,14 @@ li {
 .link-nav:focus {
   color: var(--color-accent);
 }
-.page-indikator {
+/* .page-indikator {
   position: absolute;
   width: 100%;
   bottom: 0;
   height: 4px;
   background: #2196f3;
   border-radius: 2px;
-}
+} */
 /* .link-nav::after {
    position: absolute;
    width: 100%;
@@ -120,7 +120,8 @@ li {
    border-radius: 2px;
 
  } */
-/* .link-current::after {
+.link-current::after {
+  content: '';
   position: relative;
   position: absolute;
   width: 100%;
@@ -128,7 +129,7 @@ li {
   height: 4px;
   background: #2196f3;
   border-radius: 2px;
-} */
+}
 
 .link-current {
   position: relative;
@@ -482,8 +483,10 @@ li {
   flex-wrap: wrap;
   gap: 30px;
 }
-.card {
+.card-list {
+  position: relative;
   box-sizing: border-box;
+  /* display: inline-block; */
   width: 370px;
   background: var(--color-title-secondary);
   border: 1px solid var(--color-border);
@@ -491,13 +494,51 @@ li {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.card:hover,
-.card:hover {
+.card-list:hover,
+.card-list:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+    
+  
+}
+.img-cards {
+  position: relative;
+}
+.card-overflov:hover {
+  opacity: 1;
+  transform: translateY(0);
+
+}
+.card-overflov {
+  
+  position: absolute;
+  /* top: 294px; */
+  width: 370px;
+  /* height: 168px; */
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding: 64px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  z-index: 1;
+  height: 294px;
+  /* transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: linear; */
+  overflow: visible;
+  opacity: 0;
+  /* pointer-events: none; */
+  transition-duration: 2000ms;
+  transform: translateY(100%);
+  transition-property: transform;
+  /* transform: translatex-bottom(294px); */
 }
 .filter {
   padding: 20px 24px;
+  
 }
 .projects {
   padding-bottom: 4px;
