@@ -63,7 +63,7 @@
       <section class="order backimage">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="order-button">Замовити послугу</button>
+          <button  type="button" class="order-button"data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="advantage-box">
@@ -466,20 +466,13 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden">
+    <div   class="backdrop is-hidden"data-modal>
       <div class="modal">
-        <div class="button-modal"><a href="" class="">
-          <img
-            src="./images/Ellipse.png"
-            alt="закрити вікно"
-            width="30"
-            height="30"
-            style="display: block"
-          />
-          <svg width="11" height="11">
+        <button  class="button-modal"data-modal-close>
+           <svg width="11" height="11" >
             <use href="./images/icons.svg#icon-Vector"></use>
           </svg>
-        </a></div>  
+        </button>  
         </div>
       </div>
     </div>
