@@ -503,33 +503,24 @@ li {
   position: relative;
   overflow: hidden;
 }
-/* .card-overflov:hover {
-  opacity: 1;
-  transform: translateY(0);
 
-} */
-.test {
+.card {
   display: block;
 }
-.test:hover .overflow,
-.test:focus .overflow {
-  /* opacity: 1; */
-  transform: translateY(0%);
+.card:hover .overflow,
+.card:focus .overflow {
+ transform: translateY(0%);
 }
 .overflow {
   position: absolute;
   width: 370px;
   top: 0%;
   left: 0%;
-  /* padding: 64px 24px; */
   background-color: rgba(33, 150, 243, 0.9);
-  /* z-index: 1; */
   height: 294px;
   transition-property: background-color, color;
   transition-timing-function: linear;
-  /* overflow: hidden; */
-  /* opacity: 0; */
-  transition-duration: 2000ms;
+  transition-duration: 250ms;
   transform: translateY(100%);
   transition-property: transform;
 }
