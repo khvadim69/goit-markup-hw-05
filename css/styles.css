@@ -618,7 +618,7 @@ li {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background: #ffffff;
+  background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -627,22 +627,19 @@ li {
   visibility: hidden;
   pointer-events: none;
   opacity: 0;
-  /* transition-property: opacity, visibility;
+  transition-property: opacity, visibility;
   transition-timing-function: linear;
   transition-duration: 250ms;
-  transform: scale(1); */
+  transform: scale(1);
 }
 .button-modal {
-
   position: absolute;
-  top:8px;
+  top: 8px;
   right: 8px;
   height: 30px;
   width: 30px;
   background-color: inherit;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-
- 
 }
 
